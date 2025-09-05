@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ismael KEDALO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2 class="logo">KEDALO <span> I. ISMAEL</span></h2>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil" class="Description">
+    <div class="Description-text">
+      <p>Je suis <span>Ismael</span>, Développeur en devenir passionné par le web et le design !</p>
+      <a href="#projets" class="btn">Voir mes projets</a>
+    </div>
+    
+    <div class="Description-img">
+      <img src="images/DEVS.png" alt=" illustration de Développeurs">
+    </div>
+  </section>
+
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <div class="apropos-container">
+    <div class="apropos-text">
+      <p>Je m'appelle <span>Ismael</span>, passionné par la création de sites modernes et creatifs.</p> 
+      <p>Je suis actuellement etudiant en <span>developpement web</span> <br>et je cherhe a ameliorer mes competences en JavaScript, Html et Css.</p>
+      <p>J'adore transformer mes idées en projets concrets et <br> experimenter pour de nouvelles technologies.</p>
+      <a href="images/CV-ISMAEL-KEDALO.pdf" class="btn">Télécharger mon CV</a>
+    </div>
+
+    <div class="apropos-img">
+      <img src="images/PROFIL ISMA.jpg" alt="Photo Profil">
+    </div>
+  </div>
+  </section>
+
+  <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-grid">
+  <div class="projet">
+    <p>Un site en JavaScript qui utilise des animations CSS.</p>
+    <button class="btn" onclick="ouvrirJeu(1)">Voir</button>
+  </div>
+  <div class="projet">
+    <p>Un site interactif en JavaScript qui utilise des événements DOM.</p>
+    <button class="btn" onclick="ouvrirJeu(2)">Voir</button>
+  </div>
+  <div class="projet">
+    <p>Un site responsive en JavaScript qui utilise des media queries.</p>
+    <button class="btn" onclick="ouvrirJeu(3)">Voir</button>
+  </div>
+</div>
+
+
+<div id="modalJeu" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fermerJeu()">&times;</span>
+    <div id="zoneJeu"></div>
+  </div>
+</div>
+
+  </section>
+
+  
+  <section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="competences-container">
+      <div class="skills">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Travail en équipe</li>
+          <li>Bonne organisation</li>
+          <li>Adaptabilité</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>Hard Skills</h3>
+        <p>HTML <span class="bar"><span class="html"></span></span></p>
+        <p>CSS <span class="bar"><span class="css"></span></span></p>
+        <p>JavaScript <span class="bar"><span class="js"></span></span></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Vous avez un <span>projet en tête ?</span></h2>
+    <h3>N’hésitez pas à <span>me contacter</span></h3>
+    <form id="contactForm">
+  <div class="row">
+    <input type="text" id="lastname" placeholder="Votre nom" required>
+    <input type="text" id="firstname" placeholder="Votre prénom" required>
+  </div>
+
+  <input type="email" id="email" placeholder="Votre email" required>
+  <textarea id="message" placeholder="Votre message" required></textarea>
+  <button type="submit" class="btn">Envoyer</button>
+</form>
+
+  </section>
+
+  <footer>
+    <p>Designed by <span>Ismael</span> avec HTML, CSS et JS</p>
+    <p>Tous droits réservés - 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
